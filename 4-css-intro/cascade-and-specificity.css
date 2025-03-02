@@ -1,0 +1,40 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: whitesmoke;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Element selector (least specific) */
+div {
+    border: 1px solid lightgrey;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: darkgrey;
+}
+
+/* Class Selector (more specific than element) */
+.highlight {
+    color: black;
+}
+
+/* Same Class, Cascade (later rule overides) */
+.highlight {
+    color: red;
+}
+
+/* !important can override anything that doesn't already have !important tag */
+/* .highlight {
+    color: purple !important;
+} */
+
+/* ID selector (more specific than class) */
+#special1, #special2 {
+    font-weight: bold;
+    color: green;
+}
+
+/* Inline style will be the most specific (added directly to HTML) */

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+        <link rel="stylesheet" href="form-validation.css">
+    </head>
+    <body>
+        <!-- Label Elements -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <!-- Pattern Attribute -->
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip" pattern="\d{5}" title="Please enter a valid US zip code">
+
+        <!-- Required Attribute -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Min & Max Attributes -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="18" max="99">
+
+        <!-- Disabled Attribute -->
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" disabled>
+
+        <!-- Aria Invalid Attribute -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" pattern="[a-zA-Z0-9_]{5,}" placeholder="Enter letters, numbers, and underscores only" oninput="validateUsername()" aria-invalid="false">
+
+        <!-- Output Element -->
+        <form oninput="updateTotal()">
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" value="10" readonly>
+            <br>
+            
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+            <br>
+            
+            <label for="total">Total:</label>
+            <output id="total" name="total" for="price quantity">$10</output>
+        </form>
+        <script src="form-validation.js"></script>
+    </body>
+</html>

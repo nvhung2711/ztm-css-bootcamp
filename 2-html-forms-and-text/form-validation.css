@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+    background-color: #f4f5f7;
+}
+  
+label, input, output {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+  
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s ease-in-out;
+}
+  
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+  
+  /* Accessible Rich Internet Applications */
+input[aria-invalid="true"], input:invalid {
+      border: 2px solid red;
+      background-color: #ffe6e6;
+}
+ 
+input:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+  
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    /* background-color: dodgerblue; */
+}
+
+.test{
+    color: dodgerblue;
+    margin: 10px;
+}

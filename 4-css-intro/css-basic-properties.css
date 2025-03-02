@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: whitesmoke;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.color {
+    color: dodgerblue;
+}
+
+.font-size {
+    font-size: 24px;
+}
+
+.font-family {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text-align {
+    text-align: center;
+}
+
+.line-height {
+    line-height: 2;
+}
+
+.letter-spacing {
+    letter-spacing: 3px;
+}
+
+.border {
+    border: 3px solid dodgerblue;
+}
+
+.margin {
+    margin: 20px;
+}
+
+.padding {
+    padding: 30px;
+}
+
+.width-height {
+    width: 50%;
+    height: 150px;
+    background-color: orangered;
+    color: white;
+}
+
+.position {
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+.transition {
+    background-color: limegreen;
+    color: white;
+    cursor: pointer;
+}
+
+.transition:hover {
+    background-color: green;
+    transition: background-color 0.5s ease;
+}
+
+.transform:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}

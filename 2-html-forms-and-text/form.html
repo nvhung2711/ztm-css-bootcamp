@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+    </head>
+    <body>
+        <form action="">
+            <!-- Basic Text Input -->
+            <input type="text" name="username" placeholder="Enter your username"><br><br>
+
+            <!-- Text Area Input -->
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea><br><br>
+
+            <!-- Number Input -->
+            <input type="number" name="age" min="10" max="99">
+
+            <!-- Emails, URL, Telephone Inputs -->
+            <input type="email" name="email" placeholder="you@example.com"><br><br>
+            <input type="url" name="website" placeholder="https://example.com"><br><br>
+            <input type="tel" name="phone" placeholder="04-55-555-555"><br><br>
+
+            <!-- Date, Time, Range Inputs -->
+            <input type="date" name="dob"><br><br>
+            <input type="time" name="appointmentTime"><br><br>
+            <input type="range" name="rating" min="0" max="10" value="8"><br><br>
+
+            <!-- Search Input -->
+            <input type="search" name="search" placeholder="Search..."><br><br>
+
+            <!-- File & Color -->
+            <input type="file" name="profilePicture" accept="image/*"><br><br>
+            <input type="color" name="favoriteColor"><br><br>
+
+            <!-- Radio Inputs -->
+            <input type="radio" name="vehicle" value="car">Car<br>
+            <input type="radio" name="vehicle" value="truck">Truck<br><br>
+
+            <!-- Checkbox -->
+            <input type="checkbox" name="vegetables" value="carrot">Carrot<br>
+            <input type="checkbox" name="vegetables" value="potato">Potato<br><br>
+
+            <!-- Password -->
+            <input type="password" name="password" minlength="8"><br><br>
+
+            <!-- Submit & Reset -->
+            <input type="submit" value="Submit Me" onclick="alert('Submitted')"><br><br>
+            <input type="reset" value="Reset Me"><br><br>
+        </form>
+    </body>
+</html>

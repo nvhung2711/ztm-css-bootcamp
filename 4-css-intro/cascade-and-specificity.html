@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <link rel="stylesheet" href="cascade-and-specificity.css">
+</head>
+<body>
+    <div id="example1">This is a DIV (styled by element selector).</div>
+
+    <div class="highlight" id="example2">
+    This is a DIV with a class of "highlight". The class tries to change its color to red.
+    </div>
+
+    <div id="special1" class="highlight">
+    This is a DIV with an ID of "special1" and a class of "highlight". The ID's styling is more specific, so the color will be green, not red.
+    </div>
+
+    <div id="special2" class="highlight" style="color: blue;">
+    This is a DIV with inline styling, an ID of "special2", and a class of "highlight". The inline style is the most specific, so the color will be blue.
+    </div>
+</body>
+</html>
