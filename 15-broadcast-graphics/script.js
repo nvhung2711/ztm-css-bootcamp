@@ -33,7 +33,7 @@ function runAnimationOUT() {
 let isGrapicVisible = true;
 
 window.addEventListener('keydown', (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     // Check if the pressed key code is 'Space' for spacebar
     if (event.code === 'Space') {
         if (isGrapicVisible) {
