@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle</title>
+    <link rel="stylesheet" href="riddle.css">
+</head>
+<body>
+    <div class="question">
+        <h1>Riddle:</h1>
+        <p id="riddlePlaceholder"></p>
+      </div>
+      
+      <div class="panel-container" onclick="togglePanel()" title="Click to Reveal Answer!">
+        <div class="panel-inside">
+          <p id="answerPlaceholder" class="answer"></p>
+        </div>
+        <div class="panel left-panel"></div>
+        <div class="panel right-panel"></div>
+      </div>
+      
+      <button onclick="fetchRiddle()">New Riddle</button>
+
+      <script src="riddle.js"></script>
+</body>
+</html>
