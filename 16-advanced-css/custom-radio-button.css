@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 24px;
+    user-select: none; 
+    color: #2c3e50;  /* Dark Blue-Gray */
+    transition: color 0.2s ease;
+}
+
+.radio-container:hover {
+    color: #2980b9;  /* Brighter Blue */
+}
+
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-radio {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #7f8c8d;  /* Gray */
+    transition: border-color 0.3s ease, transform 0.3s ease;  /* Smooth transitions */
+}
+
+.radio-container:hover .custom-radio {
+    border-color: #2980b9;  /* Brighter Blue */
+}
+
+.radio-container input:checked + .custom-radio {
+    border-color: #2980b9;  /* Brighter Blue */
+    transform: translateY(-50%) scale(1.1);  /* subtle pop effect */
+}
+
+.custom-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #2980b9;  /* Brighter Blue */
+}
+
+.radio-container input:checked + .custom-radio:after {
+    display: block;
+}
