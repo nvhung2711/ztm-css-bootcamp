@@ -25,7 +25,7 @@ section {
 }
 
 /* Navigation */
-/* .menu-icon {
+.menu-icon {
     position: fixed;
     top: 15px;
     left: 15px;
@@ -40,7 +40,7 @@ section {
 
 .menu-icon div {
     height: 0.25rem;
-    background-color: var(--on-background);
+    background-color: white;
     transition: all 0.3s ease;
 }
 
@@ -61,14 +61,13 @@ section {
     position: fixed;
     top: 0;
     left: 0;
-    background: var(--background);
     width: 100%;
     z-index: 10;
 }
 
 nav {
     height: 100%;
-    color: var(--on-background);
+    color: white;
     position: fixed;
     top: 0;
     left: 0;
@@ -92,9 +91,19 @@ nav ul li {
     margin: 1rem 0;
 }
 
+nav a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        padding-bottom: 5px;
+        border-bottom: 5px solid white;
+    }
+}
+
 nav.active {
     transform: translateX(0);
-} */
+}
 
 /* Home Section -------------- */
 #home {
@@ -416,4 +425,105 @@ footer small {
     bottom: 20px;
     width: 100%;
     text-align: center;
+}
+
+/* Media Queries -------------------------- */
+
+/* All Mobile Devices */
+@media screen and (max-width: 1180px) {
+    html {
+      scroll-behavior: auto;
+    }
+  
+    nav {
+      width: 100%;
+      background: black;
+    }
+  
+    nav ul {
+      padding-left: 0;
+    }
+  }
+  
+  /* Tablet Vertical (Large) */
+  @media screen and (orientation: portrait) and (max-width: 1180px) {
+    .about-grid {
+      width: 80vw;
+    }
+  
+    .text-box {
+      width: 80vw;
+      padding: 50px;
+    }
+  
+    .projects-grid {
+      margin: 0 10%;
+    }
+  
+    .banner {
+      transform: rotate(0deg);
+    }
+  }
+  
+  /* Tablet Horizontal (Large) */
+  @media screen and (min-width: 800px) and (max-width: 1180px) {
+    .about-grid {
+      width: 80vw;
+    }
+  
+    .text-box {
+      padding: 50px;
+    }
+  
+    .projects-grid {
+      margin: 0 10%;
+    }
+  }
+  
+  /* Tablet Horizontal (Small) */
+  @media screen and (orientation: landscape) and (max-height: 769px) {
+    .section-title h2 {
+      font-size: 3rem;
+    }
+  
+    .banner {
+      transform: rotate(0deg);
+    }
+  }
+  
+  /* Smartphone Horizontal */
+  @media screen and (min-width: 600px) and (max-width: 950px) {
+    .page-title h1 {
+      font-size: 4rem;
+    }
+  
+    .banner {
+      bottom: 80px;
+    }
+  }
+  
+  /* Smartphone Vertical */
+  @media screen and (max-width: 600px) {
+    .section-title h2 {
+      font-size: 3rem;
+    }
+  
+    .about-grid {
+      grid-template-columns: 1fr;
+      width: 100vw;
+    }
+  
+    .box1, .box2, .box3, .box4, .box5, .box6 {
+      grid-area: unset;
+      grid-column: 1;
+    }
+  
+    .text-box {
+      width: 90vw;
+      padding: 40px;
+    }
+  
+    .banner {
+      transform: rotate(0deg);
+    }
 }
